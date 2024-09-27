@@ -6,12 +6,40 @@
     --cor-5: #e6e6e6;
     --cor-6: #ef97a4;
 }
-.bnt-body{
-    background-color:#ce1f3a ;
+.Body-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: var(--cor-2);
+}
+.body-title{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--cor-4);
+    text-align: center;
+}
+.body-subtitle{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.body-text{
+    font-size: 1.2rem;
+    max-width: 800px;
+    line-height: 1.6;
+}
+.bnt-produto{
+    margin-top: 30px;
+    padding: 10px 25px;
+    font-size: 1.5rem;
+    color: var(--cor-2);
+    background-color: var(--cor-4);
     border: none;
-    padding: 10px;
-    border-radius: 12px;
-    color:#ffffff ;
-    font-size: 13px;
-    font-weight: 500;
+    border-radius: 5px;
+}
+.bnt-produto:hover {
+    background-color: #b0192f;
 }
