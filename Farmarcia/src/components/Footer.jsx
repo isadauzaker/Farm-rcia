@@ -10,7 +10,7 @@ function Footer() {
             </div>
 
             <div className='footer-socials'>
-                <h4>Nos Siga!</h4>
+                <h4>Nos Acompanhe!</h4>
                 
                 <img src="icon instagram.png" alt="" />
                 <a href="">@farmarcia</a>
