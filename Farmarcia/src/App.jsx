@@ -1,18 +1,31 @@
+import { useState } from 'react'
 import './App.css'
 import Body from './components/Body'
 import Footer from './components/Footer'
 import Header from './components/Header'
+import Home from './pages/Home'
+import Senha from './pages/Senha'
+import Produtos from './pages/Produtos'
+import Serviços from './pages/Serviços'
+import Sorteio from './components/Sorteio'
 
 function App() {
-
+  const [pagina, setPagina] = useState(<Body />)
 
   return (
     <>
-      <Header />
+      <Header
+        mostrarHome={ () => setPagina(<Home />)}
+        mostrarSenha={ () => setPagina(<Senha />) }
+        mostrarProdutos={ () => setPagina(<Produtos />)}
+        mostrarServiços={ () => setPagina(<Serviços />)}
+      />
       <div className='container'>
-      <Body />
+      {pagina}
       </div>
+      <Sorteio />
       <Footer />
+      
     </>
   )
 }

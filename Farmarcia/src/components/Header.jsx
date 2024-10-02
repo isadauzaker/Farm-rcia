@@ -1,18 +1,20 @@
 import React from 'react'
-import { useState } from 'react'
 import './Header.css'
 
-function Header() {
+
+function Header({mostrarHome,  mostrarSenha, mostrarProdutos, mostrarServiços}) {
 
   return (
     <div className='Header-container'>
       
         <img className='img-logo' src="farmarcia-logo-pq.PNG.png" alt="" />
         <h1>Farmárcia</h1>
-        <button>HOME</button>
-        <button>Senha</button>
-        <button>Produtos</button>
-        <button>Serviços</button>
+        <button onClick={mostrarHome}>HOME</button>
+        <button onClick={mostrarSenha}>Senha</button>
+        <button onClick={mostrarProdutos}>Produtos</button>
+        <button onClick={mostrarServiços}>Serviços</button>
+
+       
 
     </div>
   )
