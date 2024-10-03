@@ -7,7 +7,7 @@ import Home from './pages/Home'
 import Senha from './pages/Senha'
 import Produtos from './pages/Produtos'
 import Serviços from './pages/Serviços'
-import Sorteio from './components/Sorteio'
+
 
 function App() {
   const [pagina, setPagina] = useState(<Body />)
@@ -23,7 +23,7 @@ function App() {
       <div className='container'>
       {pagina}
       </div>
-      <Sorteio />
+      
       <Footer />
       
     </>
